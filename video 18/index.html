@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Box Model</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      background-color: aqua;
+    }
+    .box1 {
+      color: rgb(19, 19, 1);
+      padding: 10px;
+      border: 1px solid black;
+      margin: 25px;
+      height: 200px;
+      box-sizing: border-box;
+    }
+    /* margin from bottom of box1 and top of box2 should be combined to 50 but we can see it is just 25. This is margin collapse */
+    .box2 {
+      color: red;
+      padding: 10px;
+      border: 1px solid black;
+      margin: 25px;
+      height: 200px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="box box1">I am a box1</div>
+  <div class="box box2">I am a box2</div>
+</body>
+</html>

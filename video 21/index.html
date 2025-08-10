@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Specificity</title>
+</head>
+<style>
+  /* CSS Specificity
+  * Specificity determines which CSS rule is applied when multiple rules match the same element.
+  If the selector is the same, the last one will be applied.
+  * Inline styles have the highest specificity, followed by ID selectors, class selectors, and element selectors.
+  */
+  
+  /* The specifity of the element selector is 1 */
+  h1 {
+    color: red;
+  }
+
+  /* The specificity of the class selector is 10 */
+  .yellow {
+    color: yellow;
+  }
+  
+  /* The specificity of class selector is 10 and the specificity of the element selector is 1. Total is 11. */
+  h1.purple {
+    color: purple;
+  }
+  /* This is an example of attribute selector and the specificity is 10. */
+
+  [data-x=a] {
+    color: green;
+  }
+  
+</style>
+<body>
+  <div>
+    <!-- The specificity of the ID selector is 100 -->
+    <h1 style="color:brown;" data-x="a" class="red yellow purple">CSS Specificity</h1>
+  </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More on CSS Selectors</title>
+</head>
+<style>
+  .box:nth-child(2) {
+    background-color: lightblue;
+  }
+  .box::first-letter {
+    color: yellowgreen;
+    font-size: 2em;
+  }
+  .boxes * {
+    color: rgb(61, 61, 139);
+    font-family: Arial, sans-serif;
+  }
+  [data-color="primary"] {
+    background-color: lightcoral;
+  }
+  .box:nth-child(even) {
+    font-style: italic;
+  }
+  .box:nth-last-child(2) {
+    background-color: lightgreen;
+  }
+  .box::before {
+    content: "Box: ";
+    font-weight: bold;
+  }
+  .box::after {
+    content: " - End";
+    font-style: italic;
+  }
+  ::selection{
+    background-color: rgb(104, 211, 80);
+    color: rgb(244, 244, 250);
+  }
+  input::placeholder {
+    color: rgb(61, 61, 139);
+    font-style: italic;
+  }
+
+</style>
+<body>
+  <div class="boxes">
+    <div class="box" data-color="primary">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+    <div class="box">Box 4</div>
+    <div class="box">Box 5</div>
+    <input type="text" name="username" placeholder="Enter your username" id="">
+</body>
+</html>

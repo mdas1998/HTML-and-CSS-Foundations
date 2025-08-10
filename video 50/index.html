@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Filters</title>
+</head>
+<style>
+  img {
+    height: 400px;
+  }
+  .img1 {
+    filter: grayscale(100%);
+  }
+  .img2 {
+    filter: sepia(100%) blur(1px) invert(1) opacity(0.75);
+  }
+</style>
+<body>
+  <img class="img1" src="./nature.jpg" alt="">
+  <img class="img2" src="./lizard-9179598.jpg" alt="">
+</body>
+</html>

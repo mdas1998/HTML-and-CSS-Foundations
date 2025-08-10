@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Float and Clear</title>
+</head>
+<style>
+  img {
+    float: left;
+  }
+  .cards {
+    border: 2px solid black;
+    display: flow-root; /* Ensures the container wraps around floated elements */
+  }
+  .card {
+    border: 2px solid red;
+  }
+  .card:nth-child(3) {
+    background-color: lightblue;
+    clear:left; /* Clears the float for this card */  
+  }
+</style>
+<body>
+  <div class="cards">  <!--.cards>.card*3 -->
+    <img src="./Darjeeling Himalayan Railway Toy Train.jpg" alt="Train" width="400" srcset="">
+    <div class="card">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam illo voluptatum pariatur distinctio commodi. Fugiat placeat voluptates deserunt animi sit vitae distinctio laudantium doloremque incidunt.
+    </div>
+    <div class="card">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum distinctio ea, repellat veniam ipsum facere omnis dolorum laborum praesentium aperiam voluptate quae officia hic id voluptatibus iste dolor doloribus quo. Aliquid impedit distinctio commodi consequatur illum. Doloribus molestiae, vero fugiat nulla, tenetur, neque blanditiis inventore tempore nam accusamus non excepturi suscipit. Esse tenetur reprehenderit deserunt animi velit, veritatis, sint eveniet neque fuga natus porro nostrum quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nisi sunt esse perspiciatis, maiores illo quis, animi eaque impedit minima, ratione ab dolorem aspernatur quia eum blanditiis deserunt numquam corrupti! Unde fugit debitis, maiores deserunt iusto accusamus suscipit eaque in? In illum maiores labore aspernatur sunt neque dolore consequatur ratione, perspiciatis voluptatum? Nesciunt consequatur repellat dicta atque quae, facilis, minima soluta quidem laboriosam recusandae, veritatis provident. Veniam adipisci eum architecto numquam quae perspiciatis alias saepe ex nemo hic, ullam repellat dicta voluptas! Rerum ipsam expedita adipisci provident temporibus. Quo inventore vel dolores aperiam dolore, corporis maiores numquam repellendus obcaecati reprehenderit non, tempore expedita ipsam excepturi. Aut quaerat iusto, laudantium sunt omnis sapiente corrupti dicta officia harum illo dignissimos laborum pariatur, tenetur atque numquam quasi quod voluptatem. Quibusdam earum libero nesciunt, explicabo ex, consequuntur officia repellendus animi blanditiis molestias sapiente cupiditate voluptates tempore. Dolor exercitationem earum reprehenderit, hic ab nam veniam quibusdam, delectus cum magnam quis, unde voluptas repellat at. Labore tenetur a unde tempora beatae vel, quas eveniet dolores necessitatibus soluta repudiandae voluptatum voluptates possimus reprehenderit sunt in ipsam? Recusandae maiores temporibus cumque, hic odit neque nemo et beatae aspernatur voluptatum quod necessitatibus perspiciatis tenetur dignissimos eligendi, saepe quam.
+    </div>
+    <div class="card">Card 3</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selectors</title>
+  <style>
+  /* Element selector */
+  div {
+    font-size: x-large;
+  }
+  /* Class selector */
+  .red {
+    color: red;
+  }
+  /* ID selector */
+  #green {
+    background-color: green;
+  }
+  /* Child selector */
+  div > p {
+    color: purple
+  }
+  /* Descendent selector */
+
+  div p {
+    font-size: 50px;
+  }
+
+  /* Universal selector */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* pseudo selector */
+  h3 {
+    color: blue;
+  }
+  a:visited {
+    color: blue;
+  }
+  a:link {
+    color: green;
+  }
+  a:active {
+    background-color: red;
+  }
+  a:hover {
+    background-color: yellow;
+  }
+
+  h2:first-child {
+    background-color: aqua;;
+  }
+  </style>
+</head>
+<body>
+  <div class="red">I am a div</div>
+  <div id="green">I am green color</div>
+  <div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <article>
+      <p>I am a new paragraph</p>
+    </article>
+    
+  </div>
+  <div>
+    <article>
+      <p>I am a Descendent paragraph</p>
+      <p>I am a Descendent paragraph</p>
+    </article>
+  </div>
+  <a href="http://www.google.com" target="_blank">Google</a>
+  <div class="main">
+    <h2>I am first</h2>
+    <h2>I am second</h2>
+  </div>
+</body>
+</html>

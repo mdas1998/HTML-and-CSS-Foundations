@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cards</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wdth,wght@75..100,100..900&display=swap');
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #f0f0f0;
+    }
+    .card {
+      width: 350px;
+      height: 500px; 
+      background-color: white;
+      margin: 50px auto;
+      border-radius: 10px;
+      padding: 10px;
+    }
+    .card-img {
+      height: 220px;
+      border-radius: 10px;
+    }
+    ul {
+      list-style: none;
+      padding: 10px;
+    }
+    ul li {
+      border: 1px solid #ccc;
+      display: inline-block;
+      padding:4px 10px;
+      border-radius: 10px;
+      margin: 2px;
+      opacity: 0.8;
+      font-family: "Open Sans", sans-serif;
+    }
+    h2 {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+    }
+    p {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      padding-top: 10px;
+    }
+    .card-btn {
+      text-align: center;
+    }
+    button {
+      background-color: #f1f3f5;
+      color: #0c529e;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+      <img src="./nature.jpg" class="card-img" alt="nature">
+      <ul>
+        <li>Nature</li>
+        <li>Fog</li>
+        <li>Mountains</li>
+      </ul>
+      <h2>Lorem ipsum dolor</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere deserunt blanditiis voluptas hic iste quaerat, eius doloremque odio laborum cupiditate!</p>
+      <div class="card-btn">
+        <button>Read More</button>
+      </div>
+  </div>
+</body>
+</html>

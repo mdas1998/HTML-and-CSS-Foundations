@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Sizing Units</title>
+  <style>
+    * {
+      margin:0;
+      padding:0;
+    }
+    html {
+      font-size:12px; /* Base font size in pixels */
+      /* This sets the base font size for rem units. 1rem = 12px */
+    }
+    .box1 {
+      border: 2px solid black;
+      background-color: lightblue;
+      box-sizing: border-box;
+      width: 2048px; /* Fixed width in pixels */
+      height: 10vh; /* Height in viewport height units */;
+    }
+    .box2 {
+      border: 2px solid black;
+      background-color: lightblue;
+      box-sizing: border-box;
+      width: 100vw; /* Width in viewport width units */
+      min-height: 60vh; /* Minimum height in viewport height units */
+      margin: 20px auto;
+      font-size: 16px; /* Base font size in pixels */
+    }
+   
+    .box2 p {
+      font-size: 2em; /* Font size in em units which means font size of 16px is inherited from parent and doubled it 2em means 2*16=32px which will be the font size of the paragraph */
+    }
+    
+    .box4 p {
+      border: 2px solid black;
+      background-color: lightblue;
+      width: 100vmin; /* Width in viewport minimum units */
+      font-size: 2rem; /* Font size in rem units which means font size of 16px is inherited from root element and doubled it 2rem means 2*16=32px which will be the font size of the paragraph */
+    }
+
+    .box3 {
+      border: 2px solid black; 
+      background-color: lightblue;
+      width: 100vw;
+      height: 20vh;
+      margin: 20px auto;
+      font-size: 2rem;
+      box-sizing: border-box;
+    }
+    .box3 div {
+      width: 50%; /* Width in percentage of the parent element */
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="box1">
+    This is a box
+  </div>
+  <div class="box2">
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus nostrum assumenda reprehenderit modi mollitia quisquam ducimus molestiae cupiditate nemo ullam, nobis ex aliquam aliquid maxime eaque at maiores tenetur est? Odit ullam itaque quae ea voluptates officia iste quia, est sapiente aliquid inventore! Voluptas nemo recusandae nulla sint reprehenderit, magnam explicabo ullam, reiciendis accusantium nam tempore!
+    </p>
+  </div>
+  <div class="box3">
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam autem recusandae culpa? Tempora enim, mollitia dolor dolores inventore perferendis quos sequi aperiam natus quasi delectus itaque harum illo aut alias repellat vero ipsa repellendus totam. Ex recusandae iusto, vel voluptates sint voluptas impedit saepe soluta laboriosam ipsum laudantium velit, iure minus eos, eum in. Voluptas, voluptates.
+    </div>
+  </div>
+  <div class="box4">
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptatem eius sapiente quod accusantium pariatur officiis ad ipsam. Tenetur harum atque qui natus, blanditiis quibusdam ex hic, fuga labore ipsum cumque magnam itaque, totam beatae est? Tempora minus, nam vero excepturi, voluptatem harum in illo totam nemo quos nesciunt asperiores perferendis voluptatibus minima, itaque repellat molestias!
+    </p>
+  </div>
+</body>
+</html>

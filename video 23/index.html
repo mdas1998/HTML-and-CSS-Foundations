@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Display Property</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .box1 {
+    border: 2px solid black;
+    /* display: inline; */
+    display: inline-block; /* inline-block allows padding and margin to be applied on top */
+    padding: 45px; /* padding top is applied in inline-block display */
+    margin: 35px; /* margin top is applied in inline-block display */
+  }
+
+  .box2 {
+    border: 2px solid black;
+    width: 84px; /* width is not applied in inline display */;
+    display: inline;
+    padding: 20px; /* padding top is not applied in inline display */
+    margin: 20px; /* margin top is not applied in inline display */
+  }
+  .box3 {
+    /* display: none; none will not show the element in the DOM */
+    visibility: hidden; /* hidden will not show the element in the DOM but will take up space */
+  }
+
+</style>
+
+<body>
+  <div class="box1">I am a box</div>
+  <div class="box1 box3">I am a box2</div>
+  <div class="box2">I am a span</div>
+  <span>I am a good boy</span>
+</body>
+
+</html>

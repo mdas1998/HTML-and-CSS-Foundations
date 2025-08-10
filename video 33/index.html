@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise - Navbar Multicolored</title>
+</head>
+<style>
+  :root {
+    --primary-color: #443052;
+    --secondary-color: #d1d1d1;
+    --text-color: white;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px;
+  }
+  ul li {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  ul li:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .navbar {
+    background-color: var(--primary-color);
+  }
+</style>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>About us</li>
+        <li>Contact</li>
+        <li>Career</li>
+      </ul>
+  </header>
+  </nav>
+</body>
+</html>

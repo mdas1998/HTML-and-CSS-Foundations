@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grids</title>
+</head>
+<style>
+  .container {
+    border: 2px solid black;
+    display: grid;
+    /* grid-template-columns: [first] 120px [second] 100px; 
+    grid-template-rows: 100px 100px 100px; */
+    grid-template-areas: "nav nav nav"
+                          "side article article"
+                          "footer footer footer";
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4, minmax(100px, 1fr)); /* 4 columns with min width of 100px */
+    row-gap: 10px; /* space between rows */
+    column-gap: 10px; /* space between columns */
+    height: 80vh; /* height of the grid container */
+    align-items: center; /* center items vertically */
+    justify-items: center; /* center items horizontally */ 
+  }
+  .item  {
+    border: 2px solid red;
+    height: 55px;
+    width: 55px;
+  }
+
+  .item-2 {
+    grid-area: side;
+    justify-self: start; /* align to the start of the grid area */
+    align-self: start; /* center vertically within the grid area */
+  }
+  .item-3 {
+    grid-area: article;
+  }
+  .item-4 {
+    /* grid-row: 1/2;
+    grid-column: first / second; */
+    grid-area: footer;
+   
+  }
+  .item-1 {
+    /* grid-row: 1/2;
+    grid-column: 1/2; */
+    grid-area: nav;
+   
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="item item-1">1</div>
+    <div class="item item-2">2</div>
+    <div class="item item-3">3</div>
+    <div class="item item-4">4</div>
+
+  </div>
+</body>
+</html>

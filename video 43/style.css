@@ -1,0 +1,181 @@
+/* Base Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+  --primary-color: #f5f5f5;
+  --text-color: #333;
+  --font-family-primary: 'Roboto';
+  --font-family-secondary: 'Open Sans';
+}
+
+/* Global Styles */
+body {
+  background-color: var(--primary-color);
+}
+
+/* ===================== MID SECTION ===================== */
+.mid-sec {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.mid-sec h2:first-child {
+  font-family: var(--font-family-primary);
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.mid-sec h2:last-child {
+  font-family: var(--font-family-secondary);
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+/* Tablet (<= 900px) */
+@media screen and (max-width: 900px) {
+  .mid-sec {
+    height: 25vh;
+    padding: 30px 20px;
+    gap: 8px;
+    font-size: 1rem;
+  }
+
+  .mid-sec h2:first-child {
+    font-size: 1.3rem;
+  }
+
+  .mid-sec h2:last-child {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile (<= 600px) */
+@media screen and (max-width: 600px) {
+  .mid-sec {
+    height: auto;
+    padding: 20px 10px;
+    gap: 5px;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  .mid-sec h2 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .mid-sec h2:first-child {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .mid-sec h2:last-child {
+    font-size: 0.95rem;
+  }
+}
+
+/* ===================== CARDS GRID ===================== */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 32px;
+  padding: 32px 0;
+  width: 60vw;
+}
+
+/* Card Style */
+.card {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  row-gap: 10px;
+}
+
+.card img {
+  width: 80px;
+}
+
+/* Extra Large Screens (>= 1400px) */
+@media screen and (min-width: 1400px) {
+  .cards-grid {
+    width: 50vw;
+    gap: 40px;
+  }
+
+  .card {
+    max-width: 340px;
+  }
+}
+
+/* Large Desktops (1200px–1399px) */
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .cards-grid {
+    width: 60vw;
+    gap: 32px;
+  }
+
+  .card {
+    max-width: 320px;
+  }
+}
+
+/* Laptops (900px–1199px) */
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+  .cards-grid {
+    width: 80vw;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .card {
+    max-width: 300px;
+  }
+}
+
+/* Tablets (600px–899px) */
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .cards-grid {
+    width: 95vw;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 24px 0;
+  }
+
+  .card {
+    max-width: 260px;
+  }
+}
+
+/* Mobile Devices (< 600px) */
+@media screen and (max-width: 599px) {
+  .cards-grid {
+    width: 100vw;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 16px 0;
+  }
+
+  .card {
+    max-width: 220px;
+    row-gap: 6px;
+  }
+}

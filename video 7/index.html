@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+<body>
+  <form action="post">
+    <h1>Form to sign up for Web Development Bootcamp</h1>
+    <div>
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username" placeholder="Enter your username" pattern="[a-zA-Z0-9]+" required autofocus>
+    </div>
+    <div>
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="male" value="male">
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="female">
+    </div>
+    <div>
+      <label for="comments">Comments</label>
+      <textarea name="comments" id="comments"></textarea>
+    </div>
+    <div>
+      <label for="subscribe">Subscribe</label>
+      <input type="checkbox" name="subscribe" id="subscribe">
+    </div>
+    <div>
+      <select name="fruits" id="fruits">
+        <option value="banana">Banana</option>
+        <option value="grapes">Grapes</option>
+        <option value="mango">Mango</option>
+      </select>
+    </div>
+  </form>
+</body>
+</html>

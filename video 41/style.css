@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --brand--black: #202020;
+    --brand--purple: #5757f8;
+    --brand--grey: whitesmoke;
+    --brand--white: white;
+}
+
+body {
+  background-color: var(--brand--grey);
+}
+.nav-container {
+  width: 100%;
+  height: 60px;
+  background-color: var(--brand--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20%;
+}
+
+.nav-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap:20px;
+}
+
+.nav-links ul li {
+  font-size: 1rem;
+  font-family: Spectral;
+  font-weight: 400;;
+  padding: 0 12px;
+  border-radius: 6px;
+  background: var(--brand--grey);
+  color: var(--brand--black);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.nav-buttons {
+  display: flex;
+  gap:20px;
+  width: 40%;
+}
+
+.button {
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: Spectral;
+  border-radius: 15px;
+  padding: 6px 10px;
+}
+
+.button-primary {
+  background: var(--brand--purple);
+  color: var(--brand--white);
+  transition: background 0.2s;
+}
+
+.button-secondary {
+  background: var(--brand--grey);
+  color: var(--brand--black );
+  transition: background 0.2s;
+}
+.button-secondary:hover {
+  background: var(--brand--black);
+  color: var(--brand--grey)
+}
+
+.button-primary:hover {
+  background: var(--brand--black);
+}
