@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Object Fit and Position</title>
+  <style>
+    /* --- Background Image Example --- */
+    .container {
+      width: 460px;
+      height: 408px;
+      background-image: url('./nature.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover; /* Ensures the image covers container */
+      background-clip: border-box; 
+    }
+
+    /* --- <img> Tag Example ---
+       Uncomment the <img> in HTML to test
+    */
+    /*
+    img {
+      width: 460px;
+      height: 408px;
+      object-fit: cover;            // Fill container without distortion 
+      object-position: 50% 50%;     // Center the image 
+      
+      
+      object-position: bottom right; // Alternative examples:
+      object-fit: contain;
+    }
+    */
+  </style>
+</head>
+<body>
+  
+  <!-- Background Image Example -->
+  <div class="container"></div>
+
+  <!-- <img src="./nature.jpg" alt="Nature"> -->
+
+</body>
+</html>
