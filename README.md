@@ -1,29 +1,27 @@
 # HTML and CSS Fundamentals
 
-This repository contains my learning notes, examples, and practice code for **HTML** and **CSS** fundamentals.  
-The folder is organized into multiple subfolders, each focusing on a specific topic — from basic HTML structure to advanced CSS concepts.
-
-## 📂 Structure
-
-Each subfolder covers a different topic, such as:
-- **HTML Basics** – Elements, attributes, headings, paragraphs, links, and images.
-- **Forms and Inputs** – Form elements, input types, and validation.
-- **CSS Basics** – Selectors, colors, typography, and the box model.
-- **Layout Techniques** – Flexbox, Grid, and positioning.
-- **Responsive Design** – Media queries and mobile-friendly layouts.
-- **Advanced Styling** – Transitions, animations, and pseudo-classes.
-
-## 🎯 Purpose
-
-The goal of this repository is to:
-- Strengthen my understanding of HTML and CSS.
-- Keep all practice files organized for easy reference.
-- Share my learning journey.
-
-## 🙏 Credits
-
-Special thanks to **[@CodeWithHarry](https://github.com/CodeWithHarry)** for his amazing tutorials and guidance.
+This repository contains my learning practice for **HTML and CSS**.  
+Each folder is named after the topic it covers, with code examples and explanations.
 
 ---
 
-📌 *Feel free to explore the folders and learn along!*
+## 📂 Topics Covered
+- Each folder corresponds to a specific HTML or CSS concept.
+- Inside, you'll find example HTML and CSS files demonstrating the topic.
+
+---
+
+## 📖 Credits
+Special thanks to **[@CodeWithHarry](https://twitter.com/CodeWithHarry)** for the amazing tutorials and guidance.
+
+---
+
+## 🚀 What's Next?
+I’ll be building on this foundation by starting my **JavaScript** learning journey soon.
+
+---
+
+## 💡 How to Use
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mdas1998/HTML-and-CSS-Foundations.git
